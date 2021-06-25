@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    >
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -24,7 +25,9 @@
         android:layout_marginTop="7dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:text="Preview"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:ellipsize="end"
+        android:maxLines="2"/>
 
     <TextView
         android:id="@+id/tvOverview"
@@ -36,5 +39,5 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:text="Preview"
         android:ellipsize="end"
-        android:maxLines="7" />
+        android:maxLines="6" />
 </RelativeLayout>
